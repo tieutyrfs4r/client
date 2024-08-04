@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<% include ../common/ejs/head.ejs %>
+<body>
+<div id="cryptoon-layout" class="theme-orange">
+
+
+    <% include ../common/ejs/sidebar.ejs%>
+
+
+    <div class="main px-lg-4 px-md-4" id="app">
+
+
+        <% include ../common/ejs/body-header.ejs%>
+        <%include ../common/ejs/notifies.ejs%>
+        <transaction></transaction>
+
+        <%include ../common/ejs/custom-settings.ejs%>
+
+    </div>
+
+</div>
+<%include ../common/ejs/footer.ejs%>
+<% include ../common/ejs/scripts.ejs %>
+<script src="/assets/js/transaction.js"></script>
+</body>
+</html>

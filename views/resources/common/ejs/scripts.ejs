@@ -1,0 +1,34 @@
+
+
+<script src="/assets/bundles/libscripts.bundle.js"></script>
+
+<script src="/assets/bundles/dataTables.bundle.js"></script>
+<script src="/assets/bundles/apexcharts.bundle.js"></script>
+
+<script src="/assets/js/template.js"></script>
+<script src="/assets/js/page/index.js"></script>
+
+
+<%-settings.TIDIO_URL%>
+<script>
+    (function() {
+        function onTidioChatApiReady() {
+
+            window.tidioChatApi.hide();
+            window.tidioChatApi.on("close", function() {
+                window.tidioChatApi.hide();
+            });
+        }
+
+        if (window.tidioChatApi) {
+            window.tidioChatApi.on("ready", onTidioChatApiReady);
+        }
+        const showSupport = async function() {
+            await window.tidioChatApi.show();
+            await window.tidioChatApi.open();
+        }
+        document.querySelector(".support1").addEventListener("click", showSupport);
+        document.querySelector(".support2").addEventListener("click", showSupport);
+    })();
+</script>
+

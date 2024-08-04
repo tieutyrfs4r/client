@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<% include ../common/ejs/head.ejs %>
+<body>
+<div id="cryptoon-layout" class="theme-orange">
+
+    <div class="main p-2 py-3 p-xl-5">
+
+        <div class="container-xxl">
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="/dashboard" class="d-flex align-item-center">
+                         <img src="/front/images/logo.png" srcset="/front/images/logo2x.png 2x" alt="logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="body d-flex p-0 p-xl-5">
+            <div class="container-xxl">
+                <div class="row g-3" >
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center auth-h100" id="app">
+                        <reset-password></reset-password>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="/assets/bundles/libscripts.bundle.js"></script>
+<script src="/assets/js/reset-password.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<% include ../common/ejs/head.ejs %>
+<body>
+<div id="cryptoon-layout" class="theme-orange">
+
+    <div class="main p-2 py-2 p-xl-5" style="height: 92vh !important;overflow:visible !important;">
+
+        <div class="container-xxl">
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="/dashboard" class="d-flex mt-3  align-item-center">
+                         <img src="/front/images/logo.png" srcset="/front/images/logo2x.png 2x" alt="logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="body d-flex p-0 p-xl-5" id="app">
+            <login />
+        </div>
+    </div>
+
+
+
+</div>
+
+<%include ../common/ejs/footer.ejs%>
+</body>
+<script src="/assets/bundles/libscripts.bundle.js"></script>
+<script src="/assets/js/login.js"></script>
+</html>

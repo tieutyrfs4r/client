@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<% include ./common/ejs/front/head.ejs%>
+<style>
+    .terms_termsContent__oxLXq {
+        width: 100%;
+        max-width: 1200px;
+        margin: 32px auto 50px;
+        border-radius: 4px;
+        padding: 32px;
+    }
+
+    .terms_termsContent__oxLXq h1,.terms_termsContent__oxLXq h3 {
+
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px
+    }
+
+    .terms_termsContent__oxLXq h1 {
+        margin-bottom: 14px
+    }
+
+    .terms_termsContent__oxLXq h3 {
+        text-indent: -14px
+    }
+
+    .terms_termsContent__oxLXq p {
+
+        margin-bottom: 0;
+        line-height: 24px;
+        font-size: 16px
+    }
+
+    .terms_termsContent__oxLXq a {
+
+    }
+
+    .terms_termsContent__oxLXq .terms_termsDate__9KJsa {
+        margin-bottom: 32px;
+
+        font-size: 16px
+    }
+
+
+    .terms_titleIntroduction__vLKc4 .terms_titleIntroduction2__cSvUe {
+        margin-top: 32px;
+        font-weight: 700
+    }
+
+
+    .terms_infoContent__CmoEg {
+        width: 100%;
+        margin-top: 64px
+    }
+
+    .terms_infoContent__CmoEg P {
+        margin-top: 32px
+    }
+
+    .terms_infoContent__CmoEg P:first-child {
+        margin-top: 0
+    }
+
+
+
+    .terms_infoContent__CmoEg ul li {
+        list-style: disc
+    }
+
+
+    .terms_infoContent__CmoEg .terms_secondary__muEnv P:first-child {
+        margin-top: 32px
+    }
+
+    .terms_infoContent__CmoEg .terms_secondary__muEnv .terms_ml24__JnohU {
+        margin-left: 24px
+    }
+
+    .terms_infoContent__CmoEg .terms_fondFourth__1vGBn {
+        margin-top: 16px;
+        margin-left: 24px
+    }
+
+    .terms_infoContent__CmoEg .terms_fondItalic__ibmeH {
+        font-style: italic;
+        font-weight: 650
+    }
+
+
+
+    .terms_infoContent__CmoEg .terms_policySecond__5sGjt P:first-child {
+        margin-top: 24px
+    }
+
+
+
+    .terms_infoContent__CmoEg .terms_policyThird__9Cvrr P:first-child {
+        margin-top: 24px
+    }
+
+
+    .terms_important__Z2be0 div {
+        font-size: 24px;
+        display: flex;
+        align-items: center
+    }
+
+    .terms_important__Z2be0 .terms_riskImportant__IxUTU {
+        font-size: 16px
+    }
+
+    .terms_important__Z2be0 p {
+        margin-top: 12px
+    }
+
+    .terms_fondBold__rI46d {
+        font-weight: 700
+    }
+
+    .terms_title__xSY29 {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+
+        margin-bottom: 32px
+    }
+
+    .terms_line__Fd3Q2 {
+        width: 8px;
+        height: 20px;
+
+        display: inline-block;
+        -webkit-margin-end: 8px;
+        margin-inline-end:8px}
+
+
+    .terms_riskIntroduction__yv_r_ {
+        margin: 24px auto auto;
+        padding: 0 35px
+    }
+
+    .terms_riskIntroduction__yv_r_ p {
+        line-height: 40px
+    }
+
+
+    .terms_infoList__Je35l .terms_infoTitle__MN4PQ {
+        font-size: 15px;
+
+    }
+
+    .terms_infoList__Je35l .terms_infoTitle__MN4PQ.terms_primaryText__7pIdN {
+
+    }
+
+    .terms_infoList__Je35l .terms_riskInfoTitle__hwB0b {
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+
+    .terms_infoList__Je35l .terms_infoPrompt__5p7m0 {
+        font-weight: 400;
+        font-size: 13px;
+
+        margin-top: 24px
+    }
+
+    .terms_infoList__Je35l .terms_infoPrompt__5p7m0.terms_primaryText__7pIdN {
+
+    }
+
+    .terms_lorePrompt__nf2PT {
+        font-weight: 400;
+        font-size: 13px
+    }
+
+    .terms_lorePrompt__nf2PT p {
+        margin-top: 24px;
+
+    }
+
+
+
+    @media(max-width: 760px) {
+        .terms_termsContent__oxLXq {
+            padding:32px 16px
+        }
+
+        .terms_termsContent__oxLXq h1,.terms_termsContent__oxLXq h3 {
+            font-size: 24px;
+            text-indent: 0
+        }
+
+        .terms_termsContent__oxLXq .terms_title__xSY29 {
+            font-size: 20px
+        }
+
+        .terms_termsContent__oxLXq .terms_riskIntroduction__yv_r_ {
+            padding: 0 16px
+        }
+    }
+
+
+
+    @media(max-width: 576px) {
+        .terms_caveat__56_Tg {
+            display:flex
+        }
+
+        .terms_caveat__56_Tg .iconfont {
+            min-width: 14px;
+            -webkit-margin-end: 4px;
+            margin-inline-end:4px;margin-top: 2px
+        }
+    }
+</style>
+<body class="">
+<div class="nk-wrap">
+    <% include ./common/ejs/front/body-head.ejs%>
+    <main class="nk-pages">
+        <section class="section no-pd overflow-hidden">
+            <div class="terms_termsContent__oxLXq">
+                <h1><%-settings.WEBSITE_NAME%> Risk Disclosure Statement</h1>
+                <p class="terms_termsDate__9KJsa">Last Updated: 01 July, 2023</p>
+                <div class="terms_important__Z2be0">
+                    <div class="terms_fondBold__rI46d terms_riskImportant__IxUTU">
+                        <svg class="sc-gEvEer hSTeNi mx-icon terms_icons__cUYKo" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16" data-icon="IconWarning">
+                            <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM6.85703 3.42852H9.14275V9.1428H6.85703V3.42852ZM9.14275 10.2855H6.85703V12.5713H9.14275V10.2855Z" fill="currentColor"></path>
+                        </svg>IMPORTANT
+                    </div>
+                    <p>To better safeguard your interests, <%-settings.WEBSITE_NAME%> reminds you that trading and/or investing in the cryptocurrency market is subject to severe risks. By participating in these activities you risk losing ALL OR SUBSTANTIALLY ALL OF YOUR ASSETS. Please understand and evaluate the risk of trading and assess your risk tolerance carefully before conducting any cryptocurrency trading or investment activities.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Interpretation</span>
+                    </div>
+                    <p>A) All terms used in this notice, which are defined in <%-settings.WEBSITE_NAME%> User Agreement (the 'User Agreement'), shall have the same meaning and construction as in the User Agreement.</p>
+                    <p>B) This Risk Disclosure Statement (the 'Statement') shall form part and parcel of the Legal Documents and shall have the same effect thereto.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span><%-settings.WEBSITE_NAME%> Services</span>
+                    </div>
+                    <p>A) This Statement provides you with information about the risks associated with <%-settings.WEBSITE_NAME%> Services. Each <%-settings.WEBSITE_NAME%> Service has its own distinct risks, which may be separately contained under the corresponding Legal Documents. This Statement provides a non-exclusive, general disclosure of the risks involved when you use <%-settings.WEBSITE_NAME%> Services.</p>
+                    <p>B) This Statement does not explain all of the risks or how such risks relate to your personal circumstances. It is important that you fully understand the risks involved before making a decision to use <%-settings.WEBSITE_NAME%> Services.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>No Advice</span>
+                    </div>
+                    <p>We do not provide advice in relation to our Products or Services. We sometimes provide factual information, information about transaction procedures and information about the potential risks. However, any decision to use our Products or Services is made by you. No communication or information provided to you by us is intended as, or shall be considered or construed as, investment advice, financial advice, trading advice, or any other sort of advice. You are solely responsible for determining whether any investment, investment strategy or related transaction is appropriate for you according to your personal investment objectives, financial circumstances and risk tolerance.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>No Monitoring</span>
+                    </div>
+                    <p><%-settings.WEBSITE_NAME%> is not your broker, intermediary, agent, or advisor and has no fiduciary relationship or obligation to you in connection with any trades or other decisions or activities undertaken by you using <%-settings.WEBSITE_NAME%> Services. We do not monitor whether your use of <%-settings.WEBSITE_NAME%> Services is consistent with your financial goals and objectives. It is up to you to assess whether your financial resources are adequate to engage in financial activity with us, and to your risk appetite in the Products and Services you use.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>No Tax, Regulatory or Legal Advice</span>
+                    </div>
+                    <p>The taxation of Digital Assets is uncertain and may vary from locations to locations. You are responsible for determining what taxes you might be liable to, and how they apply, when transacting through <%-settings.WEBSITE_NAME%> Services. It is your responsibility to report and pay any taxes that may arise from using <%-settings.WEBSITE_NAME%> Services, and you acknowledge that <%-settings.WEBSITE_NAME%> does not provide legal or tax advice relative to these transactions. If you have any doubts about your tax status or obligations when using <%-settings.WEBSITE_NAME%> Services, or with respect to the Digital Assets held in your <%-settings.WEBSITE_NAME%> Account, you are encouraged to seek independent advice.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Market Risks</span>
+                    </div>
+                    <p>Digital Asset trading is subject to severe market risk and price volatility. Changes in value may be significant and may occur rapidly and without warning. Past performance is not in anyway an indicator of future performance. The value of an investment and any returns can go down as well as up. You may not get back the amount you have invested, and there is severe risks of losing all of your assets.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Liquidity Risks</span>
+                    </div>
+                    <p>Digital Assets may have limited liquidity which may make it difficult or impossible for you to sell or exit a position when you wish to do so. This may occur at any time and from time to time, including at times of rapid price movements.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Availability Risks</span>
+                    </div>
+                    <p>We do not guarantee that <%-settings.WEBSITE_NAME%> Services will be available at any particular time or that <%-settings.WEBSITE_NAME%> Services will not be subject to unplanned service outages or network congestion. It may not be possible for you to buy, sell, store, transfer, send or receive Digital Assets when you wish to do so.</p>
+                    <p>When a Digital Assets project party faces bankruptcy, liquidation and dissolution, or violates national laws &amp; regulations, or under the request of the project party, <%-settings.WEBSITE_NAME%> will delist such Digital Assets, which may cause losses for Users.</p>
+                    <p>There are legal requirements in various countries which may restrict the Products and Services that <%-settings.WEBSITE_NAME%> can lawfully provide. Accordingly, some products and services and/or certain functionality of <%-settings.WEBSITE_NAME%> Platform may not be available or may be restricted in certain jurisdictions or regions or to certain Users and any <%-settings.WEBSITE_NAME%> marketing campaign, activities, or other promotions will not be open to (and are not targeted at or intended for) Users to whom restrictions apply. Users are responsible for informing themselves about and observing any restrictions and/or requirements imposed with respect to the access to and use of <%-settings.WEBSITE_NAME%> Platform and the corresponding Services in each jurisdiction from which the Platform and the corresponding Services are accessed by or on behalf of the User. <%-settings.WEBSITE_NAME%> reserves the right to change, modify or impose additional restrictions with respect to the access to and use of the Platform and/or the corresponding Services from time to time in its sole discretion without notification.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Third Party Risks</span>
+                    </div>
+                    <p>Third parties, such as payment providers, custodians, and banking partners may be involved in the provision of <%-settings.WEBSITE_NAME%> Services. You may be subject to the terms &amp; conditions of these third parties. <%-settings.WEBSITE_NAME%> shall not be held responsible for any loss that these third parties may cause to you.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Security Risks</span>
+                    </div>
+                    <p>It is not possible for <%-settings.WEBSITE_NAME%> to eliminate all security risks. You are responsible for keeping your <%-settings.WEBSITE_NAME%> Account password safe, and you may be responsible for all the transactions under your <%-settings.WEBSITE_NAME%> Account, whether you authorised them or not. Transactions in Digital Assets may be irreversible, and losses due to fraudulent or unauthorised transactions may not be recoverable.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Risks Related to Digital Assets Themselves</span>
+                    </div>
+                    <p>Given the nature of Digital Assets and their underlying technologies, there are a number of intrinsic risks, including but not limited to:</p>
+                    <div class="terms_secondary__muEnv">
+                        <p>a) faults, defects, hacks, exploits, errors, protocol failures or unforeseen circumstances occurring in respect of a Digital Asset or the technologies or economic systems on which the Digital Asset rely;</p>
+                        <p>b) transactions in Digital Assets being irreversible. Consequently, losses due to fraudulent or accidental transactions may not be recoverable;</p>
+                        <p>c) technological development leading to the obsolescence of a Digital Asset; and</p>
+                        <p>d) attacks on the protocol or technologies on which a Digital Asset depends, including, but not limited to: i. distributed denial of service; ii. sybil attacks; iii. phishing; iv. social engineering; v. hacking; vi. smurfing; vii. malware; viii. double spending; ix. majority-mining, consensus-based or other mining attacks; x. misinformation campaigns; xi. forks; and xii. spoofing.</p>
+                    </div>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Monitoring Risks</span>
+                    </div>
+                    <p>Digital Asset markets are open 24 hours a day, 7 days a week. Rapid price changes may occur at any time, including outside of normal business hours. You are solely responsible to ensure constant monitoring of the Digital Asset markets.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Communication Risks</span>
+                    </div>
+                    <p>When you communicate with <%-settings.WEBSITE_NAME%> via electronic communication, you should be aware that electronic communications can fail, can be delayed, may not be secure and/or may not reach the intended destination.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Currency Risks</span>
+                    </div>
+                    <p>Currency exchange fluctuations will impact your gains and losses.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Legal Risks</span>
+                    </div>
+                    <p>Changes in laws and regulations may materially affect the value of Digital Assets. This risk is unpredictable and may vary from market to market. Also, you may suffer severe losses if your actions breached national laws or regulations.</p>
+                </div>
+                <div class="terms_infoContent__CmoEg">
+                    <div class="terms_title__xSY29">
+                        <span class="terms_line__Fd3Q2"></span>
+                        <span>Other Risks</span>
+                    </div>
+                    <p>This Statement is a non-exclusive list of the risks which may be involved during your use of <%-settings.WEBSITE_NAME%> Services. However, there are other risks which may be Service-specific or Product-specific. You should read carefully risk disclosures contained separately under the Legal Documents, including the User Agreement.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <% include ./common/ejs/front/footer.ejs%>
+</div>
+
+<div class="preloader preloader-alt no-split"><span class="spinner spinner-alt"><img class="spinner-brand" src="front/images/logo-full-white.png" alt=""></span></div>
+
+<script src="front/assets/js/jquery.bundle.js?ver=210"></script>
+<script src="front/assets/js/scripts.js?ver=210"></script>
+<script src="front/assets/js/charts.js?ver=210"></script>
+<%-settings.TIDIO_URL%>
+</body>
+
+</html>

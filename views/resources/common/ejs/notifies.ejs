@@ -1,0 +1,29 @@
+<div class="body d-flex">
+    <% if (settings.user.status === 'locked' && settings.user.show_lock_message) { %>
+    <div class="alert alert-danger" role="alert">
+        <%=settings.user.lock_message%>
+    </div>
+    <% } else if (settings.user.status === 'pending') { %>
+        <div class="alert alert-warning" role="alert">
+            Tài khoản của quý khách đang đợi để được phê duyệt, thời gian có thể mất lên tới 24h. Nếu vẫn chưa được phê duyệt, vui lòng <a href="/identification" style="text-decoration: underline; color: #007bff; font-style: italic; font-weight: bold;">liên hệ hỗ trợ</a> để biết thêm chi tiết.
+        </div>
+    <% } else if (settings.user.status !== 'pending') { %>
+        <% if (settings.verifies_user_count > 0) { %>
+        <div class="alert alert-warning" role="alert">
+            Tài khoản của bạn đang có <%=settings.verifies_user_count%> yêu cầu xác minh từ hệ thống, vui lòng <a href="/identification" style="text-decoration: underline; color: #007bff; font-style: italic; font-weight: bold;">đến trung tâm xác minh</a> để hoàn tất các quy trình!
+        </div>
+        <% } %>
+
+        <% if (!settings.user.address || !settings.user.full_name || !settings.user.ward || !settings.user.district || !settings.user.province || !settings.user.date_of_birth) { %>
+            <div class="alert alert-warning" role="alert">
+                Để tránh bị gián đoạn trong quá trình giao dịch, vui lòng cập nhật đầy đủ các <a href="/profile" style="text-decoration: underline; color: #007bff; font-style: italic; font-weight: bold;">thông tin cá nhân của bạn.</a>
+            </div>
+        <% } %>
+    <% } %>
+
+    <% if (settings.user.show_notify_message) { %>
+    <div class="alert alert-<%=settings.user.notify_type%>" role="alert">
+        <%=settings.user.notify_message%>
+    </div>
+    <% }%>
+</div>

@@ -1,0 +1,80 @@
+<div class="sidebar py-2 py-md-1 me-0 border-end">
+    <div class="d-flex flex-column h-100">
+
+        <a href="/dashboard" class="mb-0 brand-icon">
+            <img src="/front/images/logo.png" srcset="/front/images/logo2x.png 2x" alt="logo" class="logo-img">
+        </a>
+
+        <ul class="menu-list flex-grow-1 mt-4 px-1">
+            <li>
+                <a class="m-link <%=originalUrl === "dashboard" ? 'active' : ''%>" href="/dashboard" style="padding: 15px;">
+                    <i class="icofont-dashboard fs-4 me-2"></i>
+                    <div><h6 class="mb-0">Bảng điều khiển</h6></div>
+                </a>
+            </li>
+            <li>
+                <a class="m-link <%=originalUrl === "market" ? 'active' : ''%>" href="/market" style="padding: 15px;">
+                    <i class="icofont-chart-line fs-4 me-2"></i>
+                    <div><h6 class="mb-0">Thị trường</h6></div>
+                </a>
+            </li>
+            <li>
+                <a class="m-link <%=originalUrl === "deposit" ? 'active' : ''%>" href="/deposit" style="padding: 15px;">
+                    <i class="icofont-plus-circle fs-4 me-2"></i>
+                    <div>
+                        <h6 class="mb-0">Nạp</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="m-link <%=originalUrl === "with-draw" ? 'active' : ''%>" href="/with-draw" style="padding: 15px;">
+                    <i class="icofont-minus-circle fs-4 me-2"></i>
+                    <div>
+                        <h6 class="mb-0">Rút</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="m-link <%=originalUrl === "wallet" ? 'active' : ''%>" href="/wallet" style="padding: 15px;">
+                    <i class="icofont-money"></i>
+                    <div><h6 class="mb-0">Tài sản</h6></div>
+                </a>
+            </li>
+            <li class="collapsed">
+                <a class="m-link" data-bs-toggle="collapse" data-bs-target="#trade" href="#" style="padding: 15px;">
+                    <i class="icofont-exchange fs-4 me-2"></i>
+                    <div>
+                        <h6 class="mb-0">Giao dịch</h6>
+                    </div>
+                    <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span>
+                </a>
+                <ul class="sub-menu collapse" id="trade">
+                    <li>
+                        <a class="m-link <%=originalUrl === "p2p" ? 'active' : ''%>" href="/transactions">
+                            <i class="icofont-users fs-4 me-2"></i>
+                            <div><h6 class="mb-0">Mua/Bán/P2P</h6></div>
+                        </a>
+
+
+                </ul>
+            </li>
+            <li>
+                <a class="m-link <%=originalUrl === "profile" ? 'active' : ''%>" href="/profile"  style="padding: 15px;">
+                    <i class="icofont-user-alt-3 fs-4 me-2"></i>
+                    <div><h6 class="mb-0">Hồ sơ cá nhân </h6></div>
+                </a>
+            </li>
+            <li>
+                <a  class="m-link support2" href="#"  style="padding: 15px;">
+                    <i class="icofont-support fs-4 me-2"></i>
+                    <div>
+                        <h6 class="mb-0">Hỗ trợ </h6>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-link sidebar-mini-btn text-muted">
+            <span><i class="icofont-bubble-right"></i></span>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<% include ../common/ejs/head.ejs %>
+<body>
+<div id="cryptoon-layout" class="theme-orange">
+
+
+    <% include ../common/ejs/sidebar.ejs%>
+
+
+    <div class="main px-lg-4 px-md-4">
+
+
+        <% include ../common/ejs/body-header.ejs%>
+        <%include ../common/ejs/notifies.ejs%>
+        <!-- Body: Body -->
+        <div class="body d-flex py-3" id="app">
+            <deposit></deposit>
+        </div>
+
+
+
+
+
+        <%include ../common/ejs/custom-settings.ejs%>
+
+    </div>
+
+</div>
+<%include ../common/ejs/footer.ejs%>
+<% include ../common/ejs/scripts.ejs %>
+
+<script>
+
+</script>
+<script src="/assets/js/deposit.js"></script>
+</body>
+</html>

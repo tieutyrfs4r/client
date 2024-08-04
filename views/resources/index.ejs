@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<% include ./common/ejs/front/head.ejs%>
+
+<body class="">
+<div class="nk-wrap">
+    <header class="nk-header page-header is-transparent is-sticky is-shrink" id="header">
+        <%include ./common/ejs/front/body-head-main.ejs%>
+        <div class="header-banner bg-theme-grad">
+            <div class="nk-banner">
+                <div class="banner banner-fs banner-single banner-gap-b2">
+                    <div class="banner-wrap">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-5 order-lg-last">
+                                    <div class="banner-gfx banner-gfx-re-s1 animated" data-animate="fadeInUp" data-delay=".9">
+                                        <img src="front/images/header/gfx-a.png" alt="header">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-sm-10 text-center text-lg-start">
+                                    <div class="banner-caption cpn tc-light">
+                                        <div class="cpn-head">
+                                            <h1 class="title animated" data-animate="fadeInUp" data-delay="1">Phí thấp <br class="d-none d-md-block"> Lợi nhuận cao</h1>
+                                        </div>
+                                        <div class="cpn-text">
+                                            <p class="animated" data-animate="fadeInUp" data-delay="1.1">Phí Maker Spot 0%, Phí Taker Spot 0,1%</p>
+                                            <p class="animated" data-animate="fadeInUp" data-delay="1.1">Phí Maker Futures 0%, Phí Taker Futures 0,01%</p>
+                                        </div>
+                                        <div class="cpn-action">
+                                            <div class="cpn-btns animated" data-animate="fadeInUp" data-delay="1.2">
+                                                <a class="btn btn-grad" href="/signup">Đăng ký &amp; Giao dịch ngay</a>
+                                            </div>
+                                            <ul class="cpn-links animated" data-animate="fadeInUp" data-delay="1.3">
+                                                <li><a class="link" href="#faq"><em class="link-icon far fa-lightbulb"></em><span>Cách mua</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="nk-pages">
+        <section class="section no-pd overflow-hidden text-center over-up">
+            <h6 class="title title-xs tc-secondary pdb-s animated" data-animate="fadeInUp" data-delay=".8">Crytoon Rating</h6>
+            <ul class="rank-list">
+                <li class="rank-item animated" data-animate="fadeInUp" data-delay=".9"><img src="front/images/logo/a.png" alt="">
+                    <div class="rank-count">4.7 <span>/5</span></div>
+                </li>
+                <li class="rank-item animated" data-animate="fadeInUp" data-delay="1"><img src="front/images/logo/b.png" alt="">
+                    <div class="rank-count">A</div>
+                </li>
+                <li class="rank-item animated" data-animate="fadeInUp" data-delay="1.1"><img src="front/images/logo/c.png" alt="">
+                    <div class="rank-count">9.4 <span>/10</span></div>
+                </li>
+                <li class="rank-item animated" data-animate="fadeInUp" data-delay="1.2"><img src="front/images/logo/d.png" alt="">
+                    <div class="rank-count">4.9 <span>/5</span></div>
+                </li>
+                <li class="rank-item animated" data-animate="fadeInUp" data-delay="1.3"><img src="front/images/logo/e.png" alt="">
+                    <div class="rank-count">5 <span>/5</span></div>
+                </li>
+            </ul>
+        </section>
+        <section class="section bg-light section-about" id="about">
+            <div class="container">
+                <div class="nk-block nk-block-about">
+                    <div class="row gutter-vr-30px align-items-center pdb-x">
+                        <div class="col-lg-12">
+                            <div class="nk-block-text">
+                                <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Về <%-settings.WEBSITE_NAME%></h2>
+                                <p class="animated" data-animate="fadeInUp" data-delay=".2"><strong>Được thành lập vào năm 2018, <%-settings.WEBSITE_NAME%> được biết đến là sàn giao dịch có công nghệ khớp giao dịch lớn và hiệu suất cao.</strong> Nhóm tại <%-settings.WEBSITE_NAME%> là một trong những người tiên phong và tiên phong về công nghệ tài chính và chuỗi khối. Hiện tại, <%-settings.WEBSITE_NAME%> phục vụ hơn 10 triệu người dùng tại hơn 170 quốc gia và khu vực trên thế giới và chúng tôi mới bắt đầu. Thành tích tuyệt vời này là một cột mốc quan trọng và <%-settings.WEBSITE_NAME%> đặt mục tiêu trở thành nền tảng phù hợp cho các nhà giao dịch mới và nhà đầu tư có kinh nghiệm khi họ tiến lên trong hành trình tài chính của mình.</p>
+
+                                <p class="animated" data-animate="fadeInUp" data-delay=".3"><%-settings.WEBSITE_NAME%> có sự hiện diện trên khắp các lục địa và khu vực pháp lý lớn trên toàn cầu và được quản lý, trực tiếp hoặc thông qua các chi nhánh, bởi một số khu vực pháp lý nổi tiếng nhất thế giới. <%-settings.WEBSITE_NAME%> cũng cung cấp hỗ trợ ngôn ngữ địa phương cho các nhà đầu tư từ các quốc gia khác nhau, giúp họ giao dịch dễ dàng hơn.</p>
+
+                                <p class="animated" data-animate="fadeInUp" data-delay=".4">Sàn giao dịch tại <%-settings.WEBSITE_NAME%> là một công cụ giao dịch hiệu suất cao được phát triển bởi các chuyên gia trong ngành ngân hàng và có khả năng hoàn thành 1,4 triệu giao dịch mỗi giây, mang lại hiệu quả đột phá và nâng cao hiệu suất. Bảo mật người dùng là ưu tiên hàng đầu tại <%-settings.WEBSITE_NAME%> vì máy chủ của chúng tôi được lưu trữ độc lập trên nhiều quốc gia để đảm bảo tính toàn vẹn và bảo mật dữ liệu tối ưu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-head">
+                    <h2 class="title title-lg animated" data-animate="fadeInUp" data-delay=".6">Các tính năng chính của <%-settings.WEBSITE_NAME%></h2>
+                </div>
+                <div class="nk-block nk-block-features mgb-m30">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="feature animated" data-animate="fadeInUp" data-delay=".7">
+                                <div class="feature-icon dot"><em class="icon ikon ikon-paricle-alt"></em></div>
+                                <div class="feature-text">
+                                    <h5 class="title title-sm">Thực hiện giao dịch nhanh chóng</h5>
+                                    <p>Sàn giao dịch tại <%-settings.WEBSITE_NAME%> cung cấp trải nghiệm giao dịch nhanh chóng và liền mạch cho người dùng.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature animated" data-animate="fadeInUp" data-delay=".8">
+                                <div class="feature-icon dot"><em class="icon ikon ikon-donught"></em></div>
+                                <div class="feature-text">
+                                    <h5 class="title title-sm">Mua bán tiền số giữa các người dùng</h5>
+                                    <p><%-settings.WEBSITE_NAME%> cho phép người dùng giao dịch và trao đổi tiền điện tử với nhau một cách dễ dàng và an toàn.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature animated" data-animate="fadeInUp" data-delay=".9">
+                                <div class="feature-icon dot"><em class="icon ikon ikon-document"></em></div>
+                                <div class="feature-text">
+                                    <h5 class="title title-sm">Bảo mật thông tin người dùng</h5>
+                                    <p>Tại <%-settings.WEBSITE_NAME%>, chúng tôi đặt sự an toàn và bảo mật thông tin người dùng lên hàng đầu với các tiêu chuẩn bảo mật nghiêm ngặt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-features bg-white" id="features">
+            <div class="container">
+                <div class="nk-block nk-block-features-s2">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-lg-5">
+                            <div class="gfx py-4 animated" data-animate="fadeInUp" data-delay=".1"><img src="front/images/gfx/gfx-a.png" alt="gfx"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="section-head">
+                                <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Tại sao lại chọn <%-settings.WEBSITE_NAME%>?</h2>
+                                <p class="animated" data-animate="fadeInUp" data-delay=".3">Chúng tôi tin vào một thế giới mới, nơi <%-settings.WEBSITE_NAME%> sẽ giúp bạn giao dịch tiền điện tử một cách dễ dàng và hiệu quả. Chúng tôi đã thiết kế sàn giao dịch rất cẩn thận để làm cho nó hấp dẫn hơn, hữu ích hơn và phù hợp với mọi loại nhu cầu giao dịch tiền điện tử.</p>
+                            </div>
+                            <div class="features-list me-4 mgb-m30">
+                                <div class="feature feature-s2 animated" data-animate="fadeInUp" data-delay=".4">
+                                    <div class="feature-icon dot"><em class="icon ikon ikon-shiled-alt"></em></div>
+                                    <div class="feature-text">
+                                        <h5 class="title title-sm">Bảo mật dữ liệu người dùng</h5>
+                                        <p>Chúng tôi bảo vệ dữ liệu người dùng và không bao giờ chia sẻ thông tin cá nhân của bạn với bên thứ ba. Chúng tôi sử dụng các biện pháp bảo mật tiên tiến để đảm bảo an toàn cho tài khoản của bạn.</p>
+                                    </div>
+                                </div>
+                                <div class="feature feature-s2 animated" data-animate="fadeInUp" data-delay=".5">
+                                    <div class="feature-icon dot"><em class="icon ikon ikon-user"></em></div>
+                                    <div class="feature-text">
+                                        <h5 class="title title-sm">Uy tín cao nhất</h5>
+                                        <p><%-settings.WEBSITE_NAME%> là một trong những sàn giao dịch uy tín nhất trên thị trường. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và nỗ lực không ngừng để cải thiện trải nghiệm người dùng.</p>
+                                    </div>
+                                </div>
+                                <div class="feature feature-s2 animated" data-animate="fadeInUp" data-delay=".6">
+                                    <div class="feature-icon dot"><em class="icon ikon ikon-data-server"></em></div>
+                                    <div class="feature-text">
+                                        <h5 class="title title-sm">Phân tích dữ liệu lớn</h5>
+                                        <p>Với công nghệ phân tích dữ liệu tiên tiến, <%-settings.WEBSITE_NAME%> cung cấp cho bạn những thông tin chi tiết và chính xác về thị trường, giúp bạn đưa ra quyết định giao dịch thông minh và hiệu quả.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-problem bg-light" id="problem">
+            <div class="container">
+                <div class="section-head text-center wide-auto-sm">
+                    <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Thách thức và vấn đề của thị trường tiền điện tử</h2>
+                    <p class="animated" data-animate="fadeInUp" data-delay=".2"><%-settings.WEBSITE_NAME%> đang xây dựng một nền tảng giao dịch tiền điện tử dựa trên công nghệ blockchain để giải quyết các vấn đề hiện tại của thị trường, mang đến trải nghiệm giao dịch tốt nhất cho người dùng.</p>
+                </div>
+                <div class="nk-block nk-block-problems tc-light">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="feature boxed boxed-lg bg-theme no-mg split-lg-left split-left animated" data-animate="fadeInUp" data-delay=".3">
+                                <h4 class="title title-md">Tự động hóa giao dịch</h4>
+                                <p>Tính năng tự động hóa giao dịch của <%-settings.WEBSITE_NAME%> giúp người dùng thực hiện các giao dịch một cách nhanh chóng và hiệu quả. Điều này giúp tiết kiệm thời gian và công sức cho người dùng, đồng thời giảm thiểu rủi ro do sai sót trong quá trình giao dịch.</p>
+                                <ul class="list list-dot">
+                                    <li>Giao dịch nhanh chóng và dễ dàng chỉ với một vài thao tác đơn giản.</li>
+                                    <li>Hỗ trợ đa dạng các loại tiền điện tử phổ biến trên thị trường.</li>
+                                    <li>Phí giao dịch cạnh tranh và hấp dẫn.</li>
+                                    <li>Hệ thống bảo mật tối ưu, đảm bảo an toàn cho tài sản của người dùng.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-group bg-theme-alt split-right split-lg animated" data-animate="fadeInUp" data-delay=".4">
+                                <div class="feature boxed bg-white-10">
+                                    <div class="feature-text">
+                                        <h4 class="title title-md">Phí giao dịch cao</h4>
+                                        <p>Mỗi năm, hơn 200 tỷ đô la phí giao dịch được thu từ người dùng trên các sàn giao dịch tiền điện tử. Điều này gây khó khăn cho người dùng, đặc biệt là những người mới bắt đầu tham gia thị trường. <%-settings.WEBSITE_NAME%> cam kết cung cấp phí giao dịch cạnh tranh và hợp lý cho người dùng.</p>
+                                    </div>
+                                </div>
+                                <div class="feature boxed bg-white-2">
+                                    <div class="feature-text">
+                                        <h4 class="title title-md">Vấn đề mở rộng và công cụ lỗi thời</h4>
+                                        <p>Mở rộng quy mô là một trong những vấn đề lớn nhất mà các sàn giao dịch tiền điện tử phải đối mặt. <%-settings.WEBSITE_NAME%> sử dụng công nghệ blockchain tiên tiến để giải quyết vấn đề này, đảm bảo hệ thống luôn hoạt động ổn định và hiệu quả ngay cả khi số lượng người dùng tăng lên.</p>
+                                    </div>
+                                </div>
+                                <div class="feature boxed bg-black-10">
+                                    <div class="feature-text">
+                                        <h4 class="title title-md">Bảo mật mạng &amp; tính linh hoạt</h4>
+                                        <p>Bảo mật là mối quan tâm hàng đầu đối với các sàn giao dịch tiền điện tử. <%-settings.WEBSITE_NAME%> sử dụng các biện pháp bảo mật tiên tiến nhất để đảm bảo an toàn cho tài sản của người dùng, đồng thời cung cấp tính linh hoạt trong giao dịch để đáp ứng nhu cầu đa dạng của người dùng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-roadmap bg-white" id="roadmap">
+            <div class="container">
+                <div class="section-head text-center wide-auto">
+                    <h6 class="title title-xs title-light animated" data-animate="fadeInUp" data-delay=".1">Lộ trình phát triển</h6>
+                    <h2 class="title title-lg title-dark animated" data-animate="fadeInUp" data-delay=".2">Mục tiêu chính của chúng tôi là gì?</h2>
+                    <p class="animated" data-animate="fadeInUp" data-delay=".3">Chiến lược thị trường của <%-settings.WEBSITE_NAME%> sẽ ưu tiên triển khai công nghệ blockchain dựa trên sự chuyển đổi của họ. Xem lộ trình của chúng tôi để biết chính xác chúng tôi đang thực hiện điều đó như thế nào.</p>
+                </div>
+                <div class="nk-block nk-block-roadmap">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <div class="roadmap-wrap">
+                                <div class="roadmap-line"></div>
+                                <div class="roadmap animated" data-animate="fadeInUp" data-delay=".4">
+                                    <div class="roadmap-year">2023</div>
+                                </div>
+                                <div class="roadmap roadmap-right roadmap-finished animated" data-animate="fadeInUp" data-delay=".5">
+                                    <div class="roadmap-step">
+                                        <div class="roadmap-head"><span class="roadmap-time">Quý 1 2023</span><span class="roadmap-title">Phát triển ý tưởng</span></div>
+                                        <p><%-settings.WEBSITE_NAME%> bắt đầu nghiên cứu và phát triển ý tưởng về một sàn giao dịch tiền điện tử an toàn, hiệu quả và thân thiện với người dùng.</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap roadmap-left roadmap-finished animated" data-animate="fadeInUp" data-delay=".6">
+                                    <div class="roadmap-step">
+                                        <div class="roadmap-head"><span class="roadmap-time">Quý 2 & Quý 3 2023</span><span class="roadmap-title">Website và Whitepaper</span></div>
+                                        <ul class="list list-dot">
+                                            <li>Ra mắt bản thử nghiệm đầu tiên của ví tiền điện tử</li>
+                                            <li>Bắt đầu đợt Pre-Sale ICO</li>
+                                            <li>Website mới được thiết kế lại và đưa vào hoạt động</li>
+                                            <li>Phát hành Whitepaper phiên bản 2</li>
+                                            <li>Phát hành Onepager phiên bản 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="roadmap animated" data-animate="fadeInUp" data-delay=".4">
+                                    <div class="roadmap-year">2024</div>
+                                </div>
+                                <div class="roadmap roadmap-right animated" data-animate="fadeInUp" data-delay=".5">
+                                    <div class="roadmap-step">
+                                        <div class="roadmap-head"><span class="roadmap-time">Quý 1 2024</span><span class="roadmap-title">Bắt đầu bán Token công khai</span></div>
+                                        <p>Khởi động ICO công khai và bắt đầu bán Token - ngày 5 tháng 1. Phân phối Token sẽ bắt đầu từ ngày 2 tháng 3.</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap roadmap-left animated" data-animate="fadeInUp" data-delay=".6">
+                                    <div class="roadmap-step">
+                                        <div class="roadmap-head"><span class="roadmap-time">Quý 2 2024</span><span class="roadmap-title">Thử nghiệm ứng dụng Beta với người dùng</span></div>
+                                        <p>Phát hành các ứng dụng đầu tiên để thử nghiệm beta với cộng đồng thành viên của chúng tôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center animated" data-animate="fadeInUp" data-delay=".4"><a href="#" class="btn btn-grad">Xem toàn bộ lộ trình</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-faq bg-white" id="faq">
+            <div class="container">
+                <div class="section-head text-center wide-auto">
+                    <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Câu hỏi thường gặp</h2>
+                    <p class="animated" data-animate="fadeInUp" data-delay=".2">Dưới đây là một số thông tin về <%-settings.WEBSITE_NAME%>, tiền điện tử và các vấn đề liên quan. Nếu bạn có bất kỳ câu hỏi nào khác, vui lòng liên hệ với chúng tôi qua email.</p>
+                </div>
+                <div class="nk-block block-faq">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
+                            <ul class="nav tab-nav tab-nav-vr tab-nav-bdr me-lg-3 animated" data-animate="fadeInUp" data-delay=".3">
+                                <li><a class="active" data-bs-toggle="tab" href="#general-questions"><em class="fas fa-caret-right"></em>Câu hỏi chung</a></li>
+                                <li><a data-bs-toggle="tab" href="#ico-questions"><em class="fas fa-caret-right"></em>Câu hỏi về <%-settings.WEBSITE_NAME%></a></li>
+                                <li><a data-bs-toggle="tab" href="#tokens-sales"><em class="fas fa-caret-right"></em>Bán Token</a></li>
+                                <li><a data-bs-toggle="tab" href="#clients-releted"><em class="fas fa-caret-right"></em>Khách hàng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 col-lg-9">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="general-questions">
+                                    <div class="accordion accordion-s1 accordion-faq" id="faq-1">
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".1">
+                                            <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#faq-1-1"><%-settings.WEBSITE_NAME%> là gì? <span class="accordion-icon"></span></h5>
+                                            <div id="faq-1-1" class="collapse show" data-bs-parent="#faq-1">
+                                                <div class="accordion-content">
+                                                    <p><%-settings.WEBSITE_NAME%> là một sàn giao dịch tiền điện tử an toàn, nhanh chóng và dễ sử dụng. Chúng tôi cung cấp cho người dùng một nền tảng để mua, bán và trao đổi các loại tiền điện tử phổ biến như Bitcoin, Ethereum, Litecoin, v.v.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".2">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1-2">Tôi có thể sử dụng những loại tiền điện tử nào để giao dịch trên <%-settings.WEBSITE_NAME%>? <span class="accordion-icon"></span></h5>
+                                            <div id="faq-1-2" class="collapse" data-bs-parent="#faq-1">
+                                                <div class="accordion-content">
+                                                    <p><%-settings.WEBSITE_NAME%> hỗ trợ giao dịch với các loại tiền điện tử phổ biến như Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Bitcoin Cash (BCH), v.v. Danh sách đầy đủ các loại tiền điện tử được hỗ trợ có thể được tìm thấy trên trang web của chúng tôi.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".3">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1-3">Làm thế nào để tôi có thể tham gia vào đợt bán Token của <%-settings.WEBSITE_NAME%>? <span class="accordion-icon"></span></h5>
+                                            <div id="faq-1-3" class="collapse" data-bs-parent="#faq-1">
+                                                <div class="accordion-content">
+                                                    <p>Để tham gia vào đợt bán Token của <%-settings.WEBSITE_NAME%>, trước tiên bạn cần đăng ký một tài khoản trên trang web của chúng tôi. Sau khi xác minh tài khoản, bạn có thể mua Token bằng Bitcoin, Ethereum hoặc Litecoin trong thời gian diễn ra đợt bán.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".4">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1-4">Tôi sẽ được lợi ích gì khi sở hữu Token của <%-settings.WEBSITE_NAME%>? <span class="accordion-icon"></span></h5>
+                                            <div id="faq-1-4" class="collapse" data-bs-parent="#faq-1">
+                                                <div class="accordion-content">
+                                                    <p>Người sở hữu Token của <%-settings.WEBSITE_NAME%> sẽ được hưởng nhiều lợi ích như phí giao dịch thấp hơn, quyền ưu tiên tham gia các chương trình khuyến mãi, cũng như cơ hội đầu tư vào các dự án tiềm năng trong tương lai của chúng tôi.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ico-questions">
+                                    <div class="accordion accordion-s1 accordion-faq" id="faq-2">
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".1">
+                                            <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#faq-2-1"><%-settings.WEBSITE_NAME%> có an toàn không?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-2-1" class="collapse show" data-bs-parent="#faq-2">
+                                                <div class="accordion-content">
+                                                    <p>Bảo mật là ưu tiên hàng đầu của <%-settings.WEBSITE_NAME%>. Chúng tôi sử dụng các biện pháp bảo mật tiên tiến như xác thực đa yếu tố, mã hóa dữ liệu và lưu trữ an toàn để bảo vệ tài sản của người dùng. Ngoài ra, chúng tôi cũng tuân thủ nghiêm ngặt các quy định và tiêu chuẩn bảo mật quốc tế.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".2">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2-2">Phí giao dịch trên <%-settings.WEBSITE_NAME%> là bao nhiêu?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-2-2" class="collapse" data-bs-parent="#faq-2">
+                                                <div class="accordion-content">
+                                                    <p>Phí giao dịch trên <%-settings.WEBSITE_NAME%> rất cạnh tranh so với các sàn giao dịch khác. Phí giao dịch cơ bản chỉ là 0,1% cho mỗi giao dịch. Ngoài ra, người dùng nắm giữ Token của <%-settings.WEBSITE_NAME%> sẽ được hưởng mức phí thấp hơn nữa tùy thuộc vào số lượng Token họ sở hữu.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".3">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2-3">Tôi có thể nạp và rút tiền như thế nào trên <%-settings.WEBSITE_NAME%>?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-2-3" class="collapse" data-bs-parent="#faq-2">
+                                                <div class="accordion-content">
+                                                    <p><%-settings.WEBSITE_NAME%> hỗ trợ nhiều phương thức nạp và rút tiền khác nhau như chuyển khoản ngân hàng, thẻ tín dụng/ghi nợ, và các ví tiền điện tử phổ biến. Quá trình nạp và rút tiền nhanh chóng, dễ dàng và an toàn. Hướng dẫn chi tiết có thể được tìm thấy trong mục "Nạp và Rút tiền" trên trang web của chúng tôi.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".4">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2-4">Làm sao để liên hệ với bộ phận hỗ trợ khách hàng của <%-settings.WEBSITE_NAME%>?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-2-4" class="collapse" data-bs-parent="#faq-2">
+                                                <div class="accordion-content">
+                                                    <p>Bộ phận hỗ trợ khách hàng của <%-settings.WEBSITE_NAME%> luôn sẵn sàng hỗ trợ bạn. Bạn có thể liên hệ với chúng tôi qua email support@<%-settings.WEBSITE_NAME%>.com hoặc mục "Hỗ trợ" trên trang web. Chúng tôi sẽ phản hồi yêu cầu của bạn trong thời gian sớm nhất.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tokens-sales">
+                                    <div class="accordion accordion-s1 accordion-faq" id="faq-3">
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".1">
+                                            <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#faq-3-1">Đợt bán Token diễn ra khi nào?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-3-1" class="collapse show" data-bs-parent="#faq-3">
+                                                <div class="accordion-content">
+                                                    <p>Đợt bán Token chính thức của <%-settings.WEBSITE_NAME%> sẽ diễn ra từ ngày 1 tháng 9 đến ngày 30 tháng 9. Trong thời gian này, bạn có thể mua Token với giá ưu đãi. Số lượng Token có hạn, vì vậy hãy nhanh tay đăng ký và tham gia ngay hôm nay!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".2">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3-2">Giá của mỗi Token là bao nhiêu?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-3-2" class="collapse" data-bs-parent="#faq-3">
+                                                <div class="accordion-content">
+                                                    <p>Trong đợt bán Token, giá của mỗi Token là 0,1 USD. Đây là mức giá ưu đãi dành cho những người tham gia sớm. Sau khi đợt bán kết thúc, giá của Token sẽ tăng lên 0,2 USD. Vì vậy, hãy tận dụng cơ hội này để sở hữu Token với giá tốt nhất.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".3">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3-3">Tôi có thể mua tối đa bao nhiêu Token?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-3-3" class="collapse" data-bs-parent="#faq-3">
+                                                <div class="accordion-content">
+                                                    <p>Không có giới hạn số lượng Token tối đa mà bạn có thể mua trong đợt bán này. Tuy nhiên, số lượng Token có hạn và chúng sẽ được bán trên cơ sở người đến trước sẽ được phục vụ trước. Vì vậy, hãy đặt mua Token sớm để đảm bảo bạn có thể sở hữu số lượng mong muốn.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".4">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3-4">Token sẽ được phân phối như thế nào sau khi đợt bán kết thúc?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-3-4" class="collapse" data-bs-parent="#faq-3">
+                                                <div class="accordion-content">
+                                                    <p>Token sẽ được phân phối vào ví của bạn trên <%-settings.WEBSITE_NAME%> trong vòng 7 ngày sau khi đợt bán kết thúc. Bạn sẽ nhận được email thông báo khi Token đã sẵn sàng để giao dịch. Hãy đảm bảo bạn đã thêm địa chỉ email chính xác trong tài khoản <%-settings.WEBSITE_NAME%> của mình để nhận được thông tin cập nhật quan trọng này.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="clients-releted">
+                                    <div class="accordion accordion-s1 accordion-faq" id="faq-4">
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".1">
+                                            <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#faq-4-1">Làm thế nào để tạo tài khoản trên <%-settings.WEBSITE_NAME%>?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-4-1" class="collapse show" data-bs-parent="#faq-4">
+                                                <div class="accordion-content">
+                                                    <p>Để tạo tài khoản trên <%-settings.WEBSITE_NAME%>, bạn chỉ cần truy cập trang web của chúng tôi và nhấp vào nút "Đăng ký". Điền vào biểu mẫu đăng ký với thông tin cá nhân và địa chỉ email của bạn. Sau khi xác minh địa chỉ email, tài khoản của bạn sẽ được kích hoạt ngay lập tức.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".2">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-4-2">Tôi cần cung cấp những thông tin gì để xác minh tài khoản?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-4-2" class="collapse" data-bs-parent="#faq-4">
+                                                <div class="accordion-content">
+                                                    <p>Để nâng cao tính bảo mật và tuân thủ các quy định, <%-settings.WEBSITE_NAME%> yêu cầu người dùng xác minh danh tính của họ. Bạn sẽ cần cung cấp một bản sao hộ chiếu hoặc chứng minh nhân dân, cũng như xác minh địa chỉ của bạn bằng hóa đơn tiện ích hoặc sao kê ngân hàng.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item animated" data-animate="fadeInUp" data-delay=".4">
+                                            <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#faq-4-4">Tôi có thể theo dõi lịch sử giao dịch của mình trên <%-settings.WEBSITE_NAME%> không?<span class="accordion-icon"></span></h5>
+                                            <div id="faq-4-4" class="collapse" data-bs-parent="#faq-4">
+                                                <div class="accordion-content">
+                                                    <p><%-settings.WEBSITE_NAME%> cung cấp công cụ theo dõi đầy đủ để bạn có thể xem lịch sử giao dịch của mình. Bạn có thể truy cập lịch sử giao dịch trong mục "Tài khoản" và xuất dữ liệu ra file CSV nếu cần. Điều này giúp bạn dễ dàng theo dõi và quản lý hoạt động giao dịch của mình trên sàn.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-m section-partners bg-light" id="partners">
+            <div class="container">
+                <div class="nk-block block-partners">
+                    <h6 class="title title-xs tc-primary text-center animated" data-animate="fadeInUp" data-delay=".1">Các đối tác của chúng tôi</h6>
+                    <ul class="partner-list flex-lg-nowrap">
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".2"><img src="front/images/partners/a.png" alt="partner"></li>
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".3"><img src="front/images/partners/b.png" alt="partner"></li>
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".4"><img src="front/images/partners/c.png" alt="partner"></li>
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".5"><img src="front/images/partners/d.png" alt="partner"></li>
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".6"><img src="front/images/partners/e.png" alt="partner"></li>
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".7"><img src="front/images/partners/f.png" alt="partner"></li>
+                        <li class="partner-logo animated" data-animate="fadeInUp" data-delay=".8"><img src="front/images/partners/g.png" alt="partner"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="nk-footer bg-theme-grad">
+        <%include ./common/ejs/front/contact.ejs%>
+       <%include ./common/ejs/front/footer-body.ejs%>
+    </footer>
+</div>
+
+<div class="preloader preloader-alt no-split"><span class="spinner spinner-alt"><img class="spinner-brand" src="front/images/logo-full-white.png" alt=""></span></div>
+
+<script src="front/assets/js/jquery.bundle.js?ver=210"></script>
+<script src="front/assets/js/scripts.js?ver=210"></script>
+<script src="front/assets/js/charts.js?ver=210"></script>
+<%-settings.TIDIO_URL%>
+</body>
+
+</html>

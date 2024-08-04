@@ -1,0 +1,78 @@
+<div class="bottom-menu">
+    <ul class="menu-items">
+        <li class="menu-item">
+            <a href="/dashboard">
+                <i class="icofont-home"></i>
+                <span>Trang chủ</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="/transactions">
+                <i class="icofont-exchange"></i>
+                <span>Giao dịch</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="/wallet">
+                <i class="icofont-money"></i>
+                <span>Tài sản</span>
+            </a>
+        </li>
+        <li class="menu-item support1">
+            <a href="#" >
+                <i class="icofont-support"></i>
+                <span>Hỗ trợ</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cài đặt</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body custom_setting">
+                <!-- Settings: Color -->
+                <div class="setting-theme pb-3">
+                    <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-color-bucket fs-4 me-2 text-primary"></i>Màu giao diện</h6>
+                    <ul class="list-unstyled row row-cols-3 g-2 choose-skin mb-2 mt-2">
+                        <li data-theme="indigo"><div class="indigo"></div></li>
+                        <li data-theme="tradewind"><div class="tradewind"></div></li>
+                        <li data-theme="monalisa"><div class="monalisa"></div></li>
+                        <li data-theme="blue"><div class="blue"></div></li>
+                        <li data-theme="cyan"><div class="cyan"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                        <li data-theme="orange" class="active"><div class="orange"></div></li>
+                        <li data-theme="blush"><div class="blush"></div></li>
+                        <li data-theme="red"><div class="red"></div></li>
+                    </ul>
+                </div>
+
+                <!-- Settings: Light/dark -->
+                <div class="setting-mode py-3">
+                    <h6 class="card-title mb-2 fs-6 d-flex align-items-center"><i class="icofont-layout fs-4 me-2 text-primary"></i>Các chế độ</h6>
+                    <ul class="list-group list-unstyled mb-0 mt-1">
+                        <li class="list-group-item d-flex align-items-center py-1 px-2">
+                            <div class="form-check form-switch theme-switch mb-0">
+                                <input class="form-check-input" type="checkbox" id="theme-switch">
+                                <label class="form-check-label" for="theme-switch">Bật chế độ tối</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center py-1 px-2">
+                            <div class="form-check form-switch theme-high-contrast mb-0">
+                                <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                <label class="form-check-label" for="theme-high-contrast">Bật chế độ tương phản cao</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button type="button" class="btn btn-white border lift" data-dismiss="modal">Đóng</button>
+
+            </div>
+        </div>
+    </div>
+</div>

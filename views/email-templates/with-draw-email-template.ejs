@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác nhận rút tiền thành công</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            max-width: 200px;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .withdrawal-amount {
+            font-size: 28px;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Xin chào, <%= fullName %>!</h1>
+        <p>Bạn đã rút thành công tiền từ tài khoản của mình. Chi tiết giao dịch như sau:</p>
+        <div class="withdrawal-amount"><%= withdrawalAmount %> <%= withdrawalCoinName %></div>
+        <p>Số tiền trên đã được trừ khỏi tài khoản của bạn và đang chờ hệ thống xác nhận. Quá trình xác nhận thường mất tối đa 24h.</p>
+        <p>Nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào, vui lòng liên hệ với đội ngũ hỗ trợ khách hàng của chúng tôi.</p>
+    </div>
+    <%include ./common/footer.ejs%>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mã xác nhận rút tiền</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            max-width: 200px;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .verification-code {
+            font-size: 28px;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Xin chào, <%= fullName %>!</h1>
+        <p>Bạn đã yêu cầu rút tiền từ tài khoản của mình. Vui lòng sử dụng mã xác nhận dưới đây để hoàn tất quá trình rút tiền:</p>
+        <div class="verification-code"><%= withdrawVerificationCode %></div>
+        <p>Mã xác nhận này chỉ có hiệu lực trong 15 phút. Vui lòng không chia sẻ mã này với bất kỳ ai.</p>
+        <p>Nếu bạn không yêu cầu rút tiền, vui lòng bỏ qua email này và liên hệ với chúng tôi ngay lập tức để bảo mật tài khoản của bạn.</p>
+    </div>
+    <%include ./common/footer.ejs%>
+</div>
+</body>
+</html>
